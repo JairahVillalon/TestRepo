@@ -1,0 +1,100 @@
+.TitleBar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 1em;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: rgb(0, 255, 170);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.AOTDemo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.SLCDemo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.UnityDemo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.BlenderDemo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: black;
+    background-color: rgb(0, 255, 170);
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+body {
+    background-color: #464646;
+}
+
+img {
+    width: 25%;
+    height: auto;
+    padding: 0.5em;
+}
+
+video {
+    width: 25%;
+    height: auto;
+    padding: 0.5em;
+}
