@@ -37,15 +37,15 @@
     
 }
 
-.SLCDemo{
+.SLCDemo,
+.UnityDemo,
+.BlenderDemo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 3em;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 1em;
+    gap: 1em;
+    margin: 3em 1em;
     padding: 1em;
     font-size: 1.5em;
     background-color: #000000;
@@ -53,64 +53,46 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.UnityDemo{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 3em;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 1em;
-    padding: 1em;
-    font-size: 1.5em;
-    background-color: #000000;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.BlenderDemo{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 3em;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 1em;
-    padding: 1em;
-    font-size: 1.5em;
-    background-color: #000000;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.cardtitleLeft {
-    width: 50%;
-}
-
+.cardtitleLeft,
+.cardtitleRight,
+.cardimageLeft,
 .cardimageRight {
-    width: 50%;
+    flex: 1 1 45%;
+    min-width: 260px;
     display: flex;
     flex-direction: column;
     gap: 1em;
-    align-items: flex-end;
 }
 
+.cardtitleLeft,
 .cardtitleRight {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
     align-items: flex-start;
 }
 
 .cardimageLeft {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
     align-items: flex-start;
+}
+
+.cardimageRight {
+    align-items: flex-end;
+}
+
+@media (max-width: 800px) {
+    .SLCDemo,
+    .UnityDemo,
+    .BlenderDemo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardtitleLeft,
+    .cardtitleRight,
+    .cardimageLeft,
+    .cardimageRight {
+        width: 60%;
+        min-width: 0;
+        align-items: center;
+    }
 }
 
 h1 {
@@ -134,10 +116,11 @@ body {
 }
 
 img {
-    width: 60%;
-    width: 25%;
+    max-width: 60%;
     height: auto;
     padding: 0.5em;
+    display: block;
+    margin: 0 auto;
 }
 
 li {
