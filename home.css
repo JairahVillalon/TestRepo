@@ -135,9 +135,3 @@ footer {
     color: rgb(0, 255, 170);
     font-family: 'Courier New', Courier, monospace;
 }
-
-video {
-    width: 25%;
-    height: auto;
-    padding: 0.5em;
-}
